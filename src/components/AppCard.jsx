@@ -1,3 +1,6 @@
+import React from 'react';
+
+
 export default function AppCard({ title, description, icon, link }) {
   return (
     <div className="app-card">
