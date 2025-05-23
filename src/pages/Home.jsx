@@ -1,3 +1,4 @@
+import React from 'react';
 import AppCard from '../components/AppCard';
 
 const apps = [
