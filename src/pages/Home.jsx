@@ -35,7 +35,7 @@ export default function Home() {
     <div className="container">
       <header>
     <div style={{ display: 'flex', alignItems: 'center' }}>
-    <img src="/Armanix-Apps/public/Armanix.png" alt="Logo" style={{ height: '40px', marginRight: '10px' }} />
+    <img src="Armanix.png" alt="Logo" style={{ height: '40px', marginRight: '10px' }} />
     <a href="/" style={{ color: 'white', textDecoration: 'none' }}>
       <h1>Armanix Apps</h1>
     </a>
