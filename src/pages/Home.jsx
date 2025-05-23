@@ -36,14 +36,14 @@ export default function Home() {
       <header>
     <div style={{ display: 'flex', alignItems: 'center' }}>
     <img src="Armanix.png" alt="Logo" style={{ height: '40px', marginRight: '10px' }} />
-    <a href="/" style={{ color: 'white', textDecoration: 'none' }}>
+    <a href="" style={{ color: 'white', textDecoration: 'none' }}>
       <h1>Armanix Apps</h1>
     </a>
     </div>
         
         <nav>
 
-          <a href="/">Home</a>
+          <a href="">Home</a>
           <a href="#apps">Apps</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
