@@ -6,25 +6,25 @@ const apps = [
   {
     title: "Tic Tac Toe",
     description: "Classic game with a modern twist.",
-    icon: "/Images/TicTacToe.png",
+    icon: "/Armanix-Apps/Images/TicTacToe.png",
     link: "https://github.com/armanali13000/TicTacToe/releases/download/1.0.1/TicTacToe.1.0.1.apk",
   },
   {
     title: "CloudView",
     description: "Weather information based on your current location",
-    icon: "/Images/CloudView.png",
+    icon: "/Armanix-Apps/Images/CloudView.png",
     link: "https://github.com/armanali13000/CloudView/releases/download/v1.0.0/CloudView.1.0.0.apk",
   },
   {
     title: "Calculator",
     description: "A powerful and modern Calculator app",
-    icon: "/Images/Calculator.png",
+    icon: "/Armanix-Apps/Images/Calculator.png",
     link: "https://github.com/armanali13000/Calculator/releases/download/1.0.1/Calculator.1.0.1.apk",
   },
   {
     title: "3D Cubic",
     description: "Connect colors in a relaxing puzzle challenge.",
-    icon: "/Images/3DCubic.png",
+    icon: "/Armanix-Apps/Images/3DCubic.png",
     link: "https://github.com/armanali13000/3D-Cubic-for-Android/releases/download/1.0.0/3D.Cubic.apk",
   },
   
@@ -35,7 +35,7 @@ export default function Home() {
     <div className="container">
       <header>
     <div style={{ display: 'flex', alignItems: 'center' }}>
-    <img src="/Images/Armanix.png" alt="Logo" style={{ height: '40px', marginRight: '10px' }} />
+    <img src="/Armanix-Apps/public/Armanix.png" alt="Logo" style={{ height: '40px', marginRight: '10px' }} />
     <a href="/" style={{ color: 'white', textDecoration: 'none' }}>
       <h1>Armanix Apps</h1>
     </a>
