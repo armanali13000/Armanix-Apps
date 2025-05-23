@@ -99,7 +99,7 @@ export default function Home() {
         minHeight: '60vh',
       }}>
         <h2 style={{ fontSize: '3rem', marginBottom: '20px' }}>
-          Welcome to My App Collection
+          Welcome to Armanix Apps Collection
         </h2>
         <p style={{ fontSize: '1.2rem', maxWidth: '600px', lineHeight: '1.6', marginBottom: '30px', color: '#fff', }}>
           Explore fun, fast, and functional mobile apps designed to entertain, solve problems, and simplify your daily routine.
