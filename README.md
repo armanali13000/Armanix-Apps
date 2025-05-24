@@ -19,7 +19,7 @@ A modern, fast, and responsive web application built with **React** and **Vite**
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Armanix-Apps/your-repo-name.git
+cd Armanix-Apps
 npm install
 npm run dev
