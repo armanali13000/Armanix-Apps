@@ -27,6 +27,12 @@ const apps = [
     icon: "/Armanix-Apps/Images/3DCubic.png",
     link: "https://github.com/armanali13000/3D-Cubic-for-Android/releases/download/1.0.0/3D.Cubic.apk",
   },
+  {
+    title: "Classic Puzzle",
+    description: "Image-based puzzles by sliding tiles into the correct order",
+    icon: "/Armanix-Apps/Images/classic_puzzle.png",
+    link: "https://github.com/armanali13000/classic_puzzle/releases/download/v1.0.0/Classic.Puzzle.1.0.0.apk",
+  },
   
 ];
 
