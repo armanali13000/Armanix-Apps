@@ -33,6 +33,12 @@ const apps = [
     icon: "/Armanix-Apps/Images/classic_puzzle.png",
     link: "https://github.com/armanali13000/classic_puzzle/releases/download/v1.0.0/Classic.Puzzle.1.0.0.apk",
   },
+  {
+    title: "Air Shooter",
+    description: "Image-based puzzles by sliding tiles into the correct order",
+    icon: "/Armanix-Apps/Images/Air_Shooter.png",
+    link: "https://github.com/armanali13000/AirplaneShooter/releases/download/1.0.0/Air.Shooter.1.0.0.apk",
+  },
   
 ];
 
