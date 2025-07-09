@@ -39,6 +39,12 @@ const apps = [
     icon: "/Armanix-Apps/Images/Air_Shooter.png",
     link: "https://github.com/armanali13000/AirplaneShooter/releases/download/1.0.0/Air.Shooter.1.0.0.apk",
   },
+  {
+    title: "2D Chess",
+    description: "A sleek and fun 2D Chess game. Play solo or with a friend",
+    icon: "/Armanix-Apps/Images/2D_Chess.png",
+    link: "https://github.com/armanali13000/2D-Chess/releases/download/1.0.0/2D.Chess.1.0.0.apk",
+  },
   
 ];
 
