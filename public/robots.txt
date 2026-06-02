@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://armanix-apps.vercel.app/sitemap.xml
+Sitemap: https://armanixapps.vercel.app/sitemap.xml
