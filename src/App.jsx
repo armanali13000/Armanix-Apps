@@ -11,7 +11,7 @@ const apps = [
     name: 'Thrill Music Player',
     category: 'Music',
     version: '1.0.0',
-    icon: assetPath('Armanix.png'),
+    icon: assetPath('Images/Thrill-logo.png'),
     downloadUrl: '#',
     playStoreUrl: '#',
     shortDescription: 'A polished offline music player for playlists, albums, and everyday listening.',
@@ -21,7 +21,7 @@ const apps = [
     changelog: ['Initial premium catalog listing', 'Improved performance notes', 'Refined music player positioning'],
     permissions: ['Storage or media library access for local songs', 'Notifications for playback controls'],
     privacy: 'Audio files stay on your device. Contact form submissions are sent only when you choose to submit them.',
-    screenshots: [assetPath('Armanix.png'), assetPath('Images/Armanix logo.png')],
+    screenshots: [assetPath('Images/Thrill-logo.png'), assetPath('Images/Armanix logo.png')],
     faq: [
       ['Does it work offline?', 'Yes, the app is positioned for local music playback and offline listening.'],
       ['Does it upload music?', 'No. Your local audio library remains on your Android device.'],
