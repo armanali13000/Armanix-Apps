@@ -3,13 +3,15 @@ import AppCard from './components/AppCard';
 import Home from './pages/Home';
 import './styles/style.css';
 
+const assetPath = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+
 const apps = [
   {
     id: 'thrill-music-player',
     name: 'Thrill Music Player',
     category: 'Music',
     version: '1.0.0',
-    icon: '/Armanix-Apps/Armanix.png',
+    icon: assetPath('Armanix.png'),
     downloadUrl: '#',
     playStoreUrl: '#',
     shortDescription: 'A polished offline music player for playlists, albums, and everyday listening.',
@@ -19,7 +21,7 @@ const apps = [
     changelog: ['Initial premium catalog listing', 'Improved performance notes', 'Refined music player positioning'],
     permissions: ['Storage or media library access for local songs', 'Notifications for playback controls'],
     privacy: 'Audio files stay on your device. Contact form submissions are sent only when you choose to submit them.',
-    screenshots: ['/Armanix-Apps/Armanix.png', '/Armanix-Apps/Images/Armanix logo.png'],
+    screenshots: [assetPath('Armanix.png'), assetPath('Images/Armanix logo.png')],
     faq: [
       ['Does it work offline?', 'Yes, the app is positioned for local music playback and offline listening.'],
       ['Does it upload music?', 'No. Your local audio library remains on your Android device.'],
@@ -30,7 +32,7 @@ const apps = [
     name: 'CloudView Weather',
     category: 'Weather',
     version: '1.0.0',
-    icon: '/Armanix-Apps/Images/CloudView.png',
+    icon: assetPath('Images/CloudView.png'),
     downloadUrl: 'https://github.com/armanali13000/CloudView/releases/download/v1.0.0/CloudView.1.0.0.apk',
     playStoreUrl: '#',
     shortDescription: 'Smart weather information based on your current location.',
@@ -40,7 +42,7 @@ const apps = [
     changelog: ['Version 1.0.0 APK release', 'Catalog details refreshed'],
     permissions: ['Location for local weather', 'Internet for forecast data'],
     privacy: 'Location access is used to provide weather information. No contact information is collected unless you submit a form.',
-    screenshots: ['/Armanix-Apps/Images/CloudView.png', '/Armanix-Apps/Armanix.png'],
+    screenshots: [assetPath('Images/CloudView.png'), assetPath('Armanix.png')],
     faq: [
       ['Why is location permission needed?', 'It helps show weather for your current area.'],
       ['Can I contact support?', 'Yes, use the support or contact form from this website.'],
@@ -51,7 +53,7 @@ const apps = [
     name: 'Tic Tac Toe',
     category: 'Game',
     version: '1.0.1',
-    icon: '/Armanix-Apps/Images/TicTacToe.png',
+    icon: assetPath('Images/TicTacToe.png'),
     downloadUrl: 'https://github.com/armanali13000/TicTacToe/releases/download/1.0.1/TicTacToe.1.0.1.apk',
     playStoreUrl: '#',
     shortDescription: 'The classic strategy game with a clean modern Android feel.',
@@ -61,7 +63,7 @@ const apps = [
     changelog: ['Version 1.0.1 APK release', 'Improved catalog metadata'],
     permissions: ['No sensitive permissions expected'],
     privacy: 'Gameplay does not require personal data. Support forms are optional and handled through Formspree.',
-    screenshots: ['/Armanix-Apps/Images/TicTacToe.png', '/Armanix-Apps/Armanix.png'],
+    screenshots: [assetPath('Images/TicTacToe.png'), assetPath('Armanix.png')],
     faq: [
       ['Is it free to download?', 'Use the APK button to access the available release package.'],
       ['Is it heavy?', 'No, it is designed as a lightweight casual game.'],
@@ -72,7 +74,7 @@ const apps = [
     name: 'StockPro ERP',
     category: 'Business',
     version: '1.0.0',
-    icon: '/Armanix-Apps/Images/stockpro-erp.png',
+    icon: assetPath('Images/stockpro-erp.png'),
     downloadUrl: '#',
     playStoreUrl: '#',
     shortDescription: 'A business-focused ERP concept for stock, operations, and productivity workflows.',
@@ -82,7 +84,7 @@ const apps = [
     changelog: ['Added to Armanix Apps catalog', 'Business app details prepared'],
     permissions: ['Storage for exported records when enabled', 'Internet for connected business features when enabled'],
     privacy: 'Business data should be handled carefully inside the app. Contact forms on this website are optional.',
-    screenshots: ['/Armanix-Apps/Images/stockpro-erp.png', '/Armanix-Apps/Armanix.png'],
+    screenshots: [assetPath('Images/stockpro-erp.png'), assetPath('Armanix.png')],
     faq: [
       ['Is this for businesses?', 'Yes, it is positioned as a business and productivity app.'],
       ['Where can I get support?', 'Use the Support page and select StockPro ERP as the app.'],
@@ -93,7 +95,7 @@ const apps = [
     name: '3D Cubic',
     category: 'Puzzle',
     version: '1.0.0',
-    icon: '/Armanix-Apps/Images/3DCubic.png',
+    icon: assetPath('Images/3DCubic.png'),
     downloadUrl: 'https://github.com/armanali13000/3D-Cubic-for-Android/releases/download/1.0.0/3D.Cubic.apk',
     playStoreUrl: '#',
     shortDescription: 'A relaxing puzzle experience with color connection gameplay.',
@@ -103,7 +105,7 @@ const apps = [
     changelog: ['Version 1.0.0 APK release', 'Premium detail page added'],
     permissions: ['No sensitive permissions expected'],
     privacy: 'Puzzle gameplay does not require personal information. Optional support messages are sent through Formspree.',
-    screenshots: ['/Armanix-Apps/Images/3DCubic.png', '/Armanix-Apps/Armanix.png'],
+    screenshots: [assetPath('Images/3DCubic.png'), assetPath('Armanix.png')],
     faq: [
       ['Is it a puzzle game?', 'Yes, it is listed under puzzle games.'],
       ['Is an APK available?', 'Yes, use the download button on the app page.'],
@@ -114,7 +116,7 @@ const apps = [
     name: 'Calculator',
     category: 'Utility',
     version: '1.0.1',
-    icon: '/Armanix-Apps/Images/Calculator.png',
+    icon: assetPath('Images/Calculator.png'),
     downloadUrl: 'https://github.com/armanali13000/Calculator/releases/download/1.0.1/Calculator.1.0.1.apk',
     playStoreUrl: '#',
     shortDescription: 'A modern calculator for fast daily Android calculations.',
@@ -124,7 +126,7 @@ const apps = [
     changelog: ['Version 1.0.1 APK release', 'Improved app store presentation'],
     permissions: ['No sensitive permissions expected'],
     privacy: 'Calculator functions do not require personal information or account data.',
-    screenshots: ['/Armanix-Apps/Images/Calculator.png', '/Armanix-Apps/Armanix.png'],
+    screenshots: [assetPath('Images/Calculator.png'), assetPath('Armanix.png')],
     faq: [
       ['Does it require internet?', 'Core calculator usage should not require internet access.'],
       ['Is it suitable for daily use?', 'Yes, it is designed as a practical Android utility.'],
@@ -135,7 +137,7 @@ const apps = [
     name: 'Chess 2D',
     category: 'Game',
     version: '1.0.0',
-    icon: '/Armanix-Apps/Images/2D_Chess.png',
+    icon: assetPath('Images/2D_Chess.png'),
     downloadUrl: 'https://github.com/armanali13000/2D-Chess/releases/download/1.0.0/2D.Chess.1.0.0.apk',
     playStoreUrl: '#',
     shortDescription: 'A sleek 2D chess game for solo practice or friendly play.',
@@ -145,7 +147,7 @@ const apps = [
     changelog: ['Version 1.0.0 APK release', 'Details page added'],
     permissions: ['No sensitive permissions expected'],
     privacy: 'Chess gameplay does not require personal information. Support messages are optional.',
-    screenshots: ['/Armanix-Apps/Images/2D_Chess.png', '/Armanix-Apps/Armanix.png'],
+    screenshots: [assetPath('Images/2D_Chess.png'), assetPath('Armanix.png')],
     faq: [
       ['Can I play chess on Android?', 'Yes, this app is listed as a 2D Android chess game.'],
       ['How do I report an issue?', 'Use the Support page and choose Chess 2D.'],
@@ -156,7 +158,7 @@ const apps = [
     name: 'Airplane Shooter Game',
     category: 'Game',
     version: '1.0.0',
-    icon: '/Armanix-Apps/Images/Air_Shooter.png',
+    icon: assetPath('Images/Air_Shooter.png'),
     downloadUrl: 'https://github.com/armanali13000/AirplaneShooter/releases/download/1.0.0/Air.Shooter.1.0.0.apk',
     playStoreUrl: '#',
     shortDescription: 'An action arcade shooter built for quick Android game sessions.',
@@ -166,7 +168,7 @@ const apps = [
     changelog: ['Version 1.0.0 APK release', 'Renamed for clearer app catalog SEO'],
     permissions: ['No sensitive permissions expected'],
     privacy: 'The game is presented as a casual Android title and does not require personal information for basic gameplay.',
-    screenshots: ['/Armanix-Apps/Images/Air_Shooter.png', '/Armanix-Apps/Armanix.png'],
+    screenshots: [assetPath('Images/Air_Shooter.png'), assetPath('Armanix.png')],
     faq: [
       ['Is this the Air Shooter app?', 'Yes, it is listed here as Airplane Shooter Game.'],
       ['Can I download the APK?', 'Yes, use the APK download button.'],
@@ -177,7 +179,7 @@ const apps = [
     name: 'Puzzle App',
     category: 'Puzzle',
     version: '1.0.0',
-    icon: '/Armanix-Apps/Images/puzzle.png',
+    icon: assetPath('Images/puzzle.png'),
     downloadUrl: 'https://github.com/armanali13000/classic_puzzle/releases/download/v1.0.0/Classic.Puzzle.1.0.0.apk',
     playStoreUrl: '#',
     shortDescription: 'A classic sliding puzzle game with colorful, focused Android gameplay.',
@@ -187,7 +189,7 @@ const apps = [
     changelog: ['Version 1.0.0 APK release', 'Replaced Gallery App listing with Puzzle App'],
     permissions: ['No sensitive permissions expected'],
     privacy: 'Puzzle gameplay does not require personal information. Optional support messages are sent through Formspree.',
-    screenshots: ['/Armanix-Apps/Images/puzzle.png', '/Armanix-Apps/Images/classic_puzzle.png'],
+    screenshots: [assetPath('Images/puzzle.png'), assetPath('Images/classic_puzzle.png')],
     faq: [
       ['Is this the puzzle app?', 'Yes, Gallery App has been replaced with Puzzle App in the catalog.'],
       ['Can I download the APK?', 'Yes, use the Download APK button on this app page.'],
@@ -249,7 +251,7 @@ function Header({ route, theme, toggleTheme }) {
   return (
     <header className="site-header">
       <a className="brand" href="#/" aria-label="Armanix Apps home">
-        <img src="/Armanix-Apps/Armanix.png" alt="Armanix Apps logo" />
+        <img src={assetPath('Armanix.png')} alt="Armanix Apps logo" />
         <span>Armanix Apps</span>
       </a>
       <button className="menu-toggle" type="button" onClick={() => setOpen((value) => !value)} aria-label="Toggle menu">
@@ -276,7 +278,7 @@ function Footer() {
     <footer className="premium-footer">
       <div>
         <a className="brand footer-brand" href="#/">
-          <img src="/Armanix-Apps/Armanix.png" alt="" />
+          <img src={assetPath('Armanix.png')} alt="" />
           <span>Armanix Apps</span>
         </a>
         <p>Premium Android apps, games, utilities, productivity tools, and smart mobile experiences.</p>
