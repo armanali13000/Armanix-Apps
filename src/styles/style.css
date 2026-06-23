@@ -706,11 +706,12 @@ img {
 }
 
 .policy-logo {
-  width: clamp(82px, 12vw, 132px);
-  height: clamp(82px, 12vw, 132px);
-  margin-bottom: 22px;
+  width: clamp(104px, 14vw, 156px);
+  height: clamp(104px, 14vw, 156px);
+  margin: 24px 0 8px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  background: var(--surface-strong);
   object-fit: cover;
   box-shadow: var(--ring);
 }

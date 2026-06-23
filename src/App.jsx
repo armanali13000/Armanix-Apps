@@ -694,9 +694,9 @@ function PolicyPage({ title, intro, sections, icon, iconAlt }) {
   return (
     <PageShell>
       <section className="section page-hero policy-hero">
-        {icon && <img className="policy-logo" src={icon} alt={iconAlt || ''} />}
         <p className="eyebrow">Legal</p>
         <h1>{title}</h1>
+        {icon && <img className="policy-logo" src={icon} alt={iconAlt || ''} />}
         <p>{intro}</p>
       </section>
       <section className="section policy-list">
