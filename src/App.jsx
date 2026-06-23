@@ -134,23 +134,23 @@ const apps = [
   },
   {
     id: 'chess-2d',
-    name: 'Chess 2D',
+    name: '2D Chess',
     category: 'Game',
     version: '1.0.0',
     icon: assetPath('Images/2D_Chess.png'),
     playStoreUrl: '#',
     websiteUrl: '#',
-    shortDescription: 'A sleek 2D chess game for solo practice or friendly play.',
+    shortDescription: 'A sleek 2D Chess game for solo practice or friendly play.',
     fullDescription:
-      'Chess 2D gives Android users a clean chess board experience for focused games, casual practice, and classic strategy sessions.',
-    features: ['2D chess board', 'Clean game interface', 'Classic strategy gameplay', 'Lightweight Android release'],
+      '2D Chess gives Android users a clean chess board experience for focused games, casual practice, and classic strategy sessions.',
+    features: ['2D Chess board', 'Clean game interface', 'Classic strategy gameplay', 'Lightweight Android release'],
     changelog: ['Version 1.0.0 release notes', 'Details page added'],
     permissions: ['No sensitive permissions expected'],
     privacy: 'Chess gameplay does not require personal information. Support messages are optional.',
     screenshots: [assetPath('Images/2D_Chess.png'), assetPath('Armanix.png')],
     faq: [
-      ['Can I play chess on Android?', 'Yes, this app is listed as a 2D Android chess game.'],
-      ['How do I report an issue?', 'Use the Support page and choose Chess 2D.'],
+      ['Can I play chess on Android?', 'Yes, this app is listed as a 2D Chess Android game.'],
+      ['How do I report an issue?', 'Use the Support page and choose 2D Chess.'],
     ],
   },
   {
@@ -412,6 +412,11 @@ function AppDetailsPage({ appId, showToast }) {
             <a className="secondary-btn" href="#/support">
               Support
             </a>
+            {app.id === 'chess-2d' && (
+              <a className="secondary-btn" href="#/apps/chess-2d/privacy">
+                Privacy Policy
+              </a>
+            )}
           </div>
         </div>
         <div className="phone-preview glass-panel">
@@ -644,6 +649,25 @@ function PrivacyPage() {
   );
 }
 
+function ChessPrivacyPage() {
+  useEffect(() => setSeo('2D Chess Privacy Policy', 'Privacy policy for 2D Chess by Armanix Apps.'), []);
+
+  return (
+    <PolicyPage
+      title="2D Chess Privacy Policy"
+      intro="This Privacy Policy explains how 2D Chess handles information when you use the app."
+      sections={[
+        ['Data Collection', '2D Chess is designed as a simple chess game and does not require personal information for basic gameplay.'],
+        ['Permissions', '2D Chess is listed with no sensitive permissions expected. If permissions are requested by a future version, they should be used only for app functionality.'],
+        ['Gameplay Data', 'Game activity is intended to stay on your device unless a future connected feature clearly explains otherwise.'],
+        ['Crash Reports', 'Technical crash information may include device model, Android version, app version, and logs needed to diagnose problems.'],
+        ['Support', 'If you contact support, the details you submit are used to understand and respond to your request.'],
+        ['Contact', 'Privacy questions about 2D Chess can be sent from the Contact or Support page.'],
+      ]}
+    />
+  );
+}
+
 function TermsPage() {
   useEffect(() => setSeo('Terms & Conditions', 'Terms and conditions for using Armanix Apps Android apps and website.'), []);
 
@@ -721,6 +745,7 @@ function ScrollTopButton() {
 function renderRoute(route, showToast) {
   if (!route) return <Home apps={apps} categories={categories} showToast={showToast} />;
   if (route === 'apps') return <AppsPage showToast={showToast} />;
+  if (route === 'apps/chess-2d/privacy') return <ChessPrivacyPage />;
   if (route.startsWith('apps/')) return <AppDetailsPage appId={route.replace('apps/', '')} showToast={showToast} />;
   if (route === 'about') return <AboutPage />;
   if (route === 'support') return <SupportPage showToast={showToast} />;
