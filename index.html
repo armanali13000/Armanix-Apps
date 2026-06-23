@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#1d4ed8" />
+    <meta name="theme-color" content="#7c3aed" />
+    <meta name="robots" content="index, follow" />
     <meta
       name="description"
-      content="Premium Android apps by Armanix Apps: useful apps, games, productivity tools, business solutions, and smart Android experiences."
+      content="Armanix Apps builds premium Android apps, games, tools, business software, and smart mobile experiences including Thrill Music Player, StockPro ERP, 2D Chess, and more."
     />
     <meta
       name="keywords"
@@ -14,21 +15,84 @@
     />
     <meta name="author" content="Armanix Apps" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Premium Android Apps by Armanix Apps" />
+    <meta property="og:title" content="Armanix Apps - Premium Android Apps, Games, Tools & Software" />
     <meta
       property="og:description"
-      content="Discover useful Android apps, games, productivity tools, business solutions, and smart mobile experiences."
+      content="Discover premium Android apps, games, tools, business software, and smart mobile experiences by Armanix Apps."
     />
-    <meta property="og:image" content="%BASE_URL%Armanix.png" />
+    <meta property="og:image" content="https://armanixapps.vercel.app/Armanix.png" />
     <meta property="og:url" content="https://armanixapps.vercel.app/" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Armanix Apps - Premium Android Apps, Games, Tools & Software" />
+    <meta
+      name="twitter:description"
+      content="Discover premium Android apps, games, tools, business software, and smart mobile experiences by Armanix Apps."
+    />
+    <meta name="twitter:image" content="https://armanixapps.vercel.app/Armanix.png" />
     <link rel="canonical" href="https://armanixapps.vercel.app/" />
     <link rel="icon" type="image/png" href="%BASE_URL%Armanix.png" />
     <link rel="apple-touch-icon" href="%BASE_URL%Armanix.png" />
-    <title>Premium Android Apps by Armanix Apps</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://armanixapps.vercel.app/#organization",
+            "name": "Armanix Apps",
+            "url": "https://armanixapps.vercel.app/",
+            "logo": "https://armanixapps.vercel.app/Armanix.png",
+            "sameAs": ["https://github.com/armanali13000"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://armanixapps.vercel.app/#website",
+            "name": "Armanix Apps",
+            "url": "https://armanixapps.vercel.app/",
+            "publisher": {
+              "@id": "https://armanixapps.vercel.app/#organization"
+            },
+            "description": "Premium Android apps, games, tools, business software, and smart mobile experiences by Armanix Apps."
+          },
+          {
+            "@type": "ItemList",
+            "name": "Armanix Apps catalog",
+            "itemListElement": [
+              { "@type": "SoftwareApplication", "position": 1, "name": "Thrill Music Player", "applicationCategory": "MusicApplication", "operatingSystem": "Android" },
+              { "@type": "SoftwareApplication", "position": 2, "name": "CloudView Weather", "applicationCategory": "WeatherApplication", "operatingSystem": "Android" },
+              { "@type": "SoftwareApplication", "position": 3, "name": "Tic Tac Toe", "applicationCategory": "GameApplication", "operatingSystem": "Android" },
+              { "@type": "SoftwareApplication", "position": 4, "name": "StockPro ERP", "applicationCategory": "BusinessApplication", "operatingSystem": "Android" },
+              { "@type": "SoftwareApplication", "position": 5, "name": "3D Cubic", "applicationCategory": "GameApplication", "operatingSystem": "Android" },
+              { "@type": "SoftwareApplication", "position": 6, "name": "Calculator", "applicationCategory": "UtilityApplication", "operatingSystem": "Android" },
+              { "@type": "SoftwareApplication", "position": 7, "name": "2D Chess", "applicationCategory": "GameApplication", "operatingSystem": "Android" },
+              { "@type": "SoftwareApplication", "position": 8, "name": "Airplane Shooter Game", "applicationCategory": "GameApplication", "operatingSystem": "Android" },
+              { "@type": "SoftwareApplication", "position": 9, "name": "Puzzle App", "applicationCategory": "GameApplication", "operatingSystem": "Android" }
+            ]
+          }
+        ]
+      }
+    </script>
+    <title>Armanix Apps - Premium Android Apps, Games, Tools & Software</title>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <main>
+        <h1>Armanix Apps</h1>
+        <p>Premium Android apps, games, tools, business software, and smart mobile experiences.</p>
+        <ul>
+          <li>Thrill Music Player</li>
+          <li>CloudView Weather</li>
+          <li>Tic Tac Toe</li>
+          <li>StockPro ERP</li>
+          <li>3D Cubic</li>
+          <li>Calculator</li>
+          <li>2D Chess</li>
+          <li>Airplane Shooter Game</li>
+          <li>Puzzle App</li>
+        </ul>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
