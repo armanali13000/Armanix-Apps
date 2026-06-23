@@ -10,15 +10,15 @@ const apps = [
     id: 'thrill-music-player',
     name: 'Thrill Music Player',
     category: 'Music',
-    version: '1.0.0',
+    version: '1.0.10',
     icon: assetPath('Images/Thrill-logo.png'),
-    downloadUrl: '#',
-    playStoreUrl: '#',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.thrill.musicplayer',
+    websiteUrl: 'https://thrillmusic.vercel.app/',
     shortDescription: 'A polished offline music player for playlists, albums, and everyday listening.',
     fullDescription:
       'Thrill Music Player is designed for a clean Android music experience with fast browsing, elegant controls, playlist organization, and a focused listening interface.',
     features: ['Local audio playback', 'Playlist management', 'Album and artist views', 'Modern dark player UI'],
-    changelog: ['Initial premium catalog listing', 'Improved performance notes', 'Refined music player positioning'],
+    changelog: ['Latest version 1.0.10', 'Play Store listing added', 'Official website link added'],
     permissions: ['Storage or media library access for local songs', 'Notifications for playback controls'],
     privacy: 'Audio files stay on your device. Contact form submissions are sent only when you choose to submit them.',
     screenshots: [assetPath('Images/Thrill-logo.png'), assetPath('Images/Armanix logo.png')],
@@ -33,13 +33,13 @@ const apps = [
     category: 'Weather',
     version: '1.0.0',
     icon: assetPath('Images/CloudView.png'),
-    downloadUrl: 'https://github.com/armanali13000/CloudView/releases/download/v1.0.0/CloudView.1.0.0.apk',
     playStoreUrl: '#',
+    websiteUrl: '#',
     shortDescription: 'Smart weather information based on your current location.',
     fullDescription:
       'CloudView Weather helps Android users check practical weather conditions with a simple interface built around location-aware forecasts.',
     features: ['Current weather', 'Location-based updates', 'Clean forecast UI', 'Fast Android experience'],
-    changelog: ['Version 1.0.0 APK release', 'Catalog details refreshed'],
+    changelog: ['Version 1.0.0 release notes', 'Catalog details refreshed'],
     permissions: ['Location for local weather', 'Internet for forecast data'],
     privacy: 'Location access is used to provide weather information. No contact information is collected unless you submit a form.',
     screenshots: [assetPath('Images/CloudView.png'), assetPath('Armanix.png')],
@@ -54,18 +54,18 @@ const apps = [
     category: 'Game',
     version: '1.0.1',
     icon: assetPath('Images/TicTacToe.png'),
-    downloadUrl: 'https://github.com/armanali13000/TicTacToe/releases/download/1.0.1/TicTacToe.1.0.1.apk',
     playStoreUrl: '#',
+    websiteUrl: '#',
     shortDescription: 'The classic strategy game with a clean modern Android feel.',
     fullDescription:
       'Tic Tac Toe brings the timeless three-in-a-row game to Android with fast rounds, simple controls, and a refined mobile interface.',
-    features: ['Quick matches', 'Simple strategy gameplay', 'Lightweight APK', 'Mobile-friendly controls'],
-    changelog: ['Version 1.0.1 APK release', 'Improved catalog metadata'],
+    features: ['Quick matches', 'Simple strategy gameplay', 'Lightweight Android game', 'Mobile-friendly controls'],
+    changelog: ['Version 1.0.1 release notes', 'Improved catalog metadata'],
     permissions: ['No sensitive permissions expected'],
     privacy: 'Gameplay does not require personal data. Support forms are optional and handled through Formspree.',
     screenshots: [assetPath('Images/TicTacToe.png'), assetPath('Armanix.png')],
     faq: [
-      ['Is it free to download?', 'Use the APK button to access the available release package.'],
+      ['Is it free to play?', 'Yes, it is designed as a lightweight casual game experience.'],
       ['Is it heavy?', 'No, it is designed as a lightweight casual game.'],
     ],
   },
@@ -75,13 +75,13 @@ const apps = [
     category: 'Business',
     version: '1.0.0',
     icon: assetPath('Images/stockpro-erp.png'),
-    downloadUrl: '#',
-    playStoreUrl: '#',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.stockproerp.inventory',
+    websiteUrl: 'https://stockproerp.vercel.app/',
     shortDescription: 'A business-focused ERP concept for stock, operations, and productivity workflows.',
     fullDescription:
       'StockPro ERP is presented as a professional Android business solution for inventory thinking, business organization, and operational clarity.',
     features: ['Inventory workflow focus', 'Business dashboard concept', 'Productivity-first design', 'Professional Android UI'],
-    changelog: ['Added to Armanix Apps catalog', 'Business app details prepared'],
+    changelog: ['Play Store listing added', 'Official website link added', 'Business app details refreshed'],
     permissions: ['Storage for exported records when enabled', 'Internet for connected business features when enabled'],
     privacy: 'Business data should be handled carefully inside the app. Contact forms on this website are optional.',
     screenshots: [assetPath('Images/stockpro-erp.png'), assetPath('Armanix.png')],
@@ -96,19 +96,19 @@ const apps = [
     category: 'Puzzle',
     version: '1.0.0',
     icon: assetPath('Images/3DCubic.png'),
-    downloadUrl: 'https://github.com/armanali13000/3D-Cubic-for-Android/releases/download/1.0.0/3D.Cubic.apk',
     playStoreUrl: '#',
+    websiteUrl: '#',
     shortDescription: 'A relaxing puzzle experience with color connection gameplay.',
     fullDescription:
       '3D Cubic gives Android players a calm puzzle challenge centered around connecting colors and solving compact visual levels.',
-    features: ['Relaxing puzzle loops', 'Color connection mechanics', 'Compact mobile levels', 'Simple APK download'],
-    changelog: ['Version 1.0.0 APK release', 'Premium detail page added'],
+    features: ['Relaxing puzzle loops', 'Color connection mechanics', 'Compact mobile levels', 'Simple Android gameplay'],
+    changelog: ['Version 1.0.0 release notes', 'Premium detail page added'],
     permissions: ['No sensitive permissions expected'],
     privacy: 'Puzzle gameplay does not require personal information. Optional support messages are sent through Formspree.',
     screenshots: [assetPath('Images/3DCubic.png'), assetPath('Armanix.png')],
     faq: [
       ['Is it a puzzle game?', 'Yes, it is listed under puzzle games.'],
-      ['Is an APK available?', 'Yes, use the download button on the app page.'],
+      ['Is it a casual game?', 'Yes, it is designed for quick puzzle sessions on Android.'],
     ],
   },
   {
@@ -117,13 +117,13 @@ const apps = [
     category: 'Utility',
     version: '1.0.1',
     icon: assetPath('Images/Calculator.png'),
-    downloadUrl: 'https://github.com/armanali13000/Calculator/releases/download/1.0.1/Calculator.1.0.1.apk',
     playStoreUrl: '#',
+    websiteUrl: '#',
     shortDescription: 'A modern calculator for fast daily Android calculations.',
     fullDescription:
       'Calculator is a simple and powerful Android utility built for quick arithmetic, everyday tasks, and clean mobile usability.',
     features: ['Fast calculations', 'Modern interface', 'Lightweight install', 'Daily utility focus'],
-    changelog: ['Version 1.0.1 APK release', 'Improved app store presentation'],
+    changelog: ['Version 1.0.1 release notes', 'Improved app store presentation'],
     permissions: ['No sensitive permissions expected'],
     privacy: 'Calculator functions do not require personal information or account data.',
     screenshots: [assetPath('Images/Calculator.png'), assetPath('Armanix.png')],
@@ -138,13 +138,13 @@ const apps = [
     category: 'Game',
     version: '1.0.0',
     icon: assetPath('Images/2D_Chess.png'),
-    downloadUrl: 'https://github.com/armanali13000/2D-Chess/releases/download/1.0.0/2D.Chess.1.0.0.apk',
     playStoreUrl: '#',
+    websiteUrl: '#',
     shortDescription: 'A sleek 2D chess game for solo practice or friendly play.',
     fullDescription:
       'Chess 2D gives Android users a clean chess board experience for focused games, casual practice, and classic strategy sessions.',
     features: ['2D chess board', 'Clean game interface', 'Classic strategy gameplay', 'Lightweight Android release'],
-    changelog: ['Version 1.0.0 APK release', 'Details page added'],
+    changelog: ['Version 1.0.0 release notes', 'Details page added'],
     permissions: ['No sensitive permissions expected'],
     privacy: 'Chess gameplay does not require personal information. Support messages are optional.',
     screenshots: [assetPath('Images/2D_Chess.png'), assetPath('Armanix.png')],
@@ -159,19 +159,19 @@ const apps = [
     category: 'Game',
     version: '1.0.0',
     icon: assetPath('Images/Air_Shooter.png'),
-    downloadUrl: 'https://github.com/armanali13000/AirplaneShooter/releases/download/1.0.0/Air.Shooter.1.0.0.apk',
     playStoreUrl: '#',
+    websiteUrl: '#',
     shortDescription: 'An action arcade shooter built for quick Android game sessions.',
     fullDescription:
       'Airplane Shooter Game is a mobile arcade experience focused on fast aircraft action, simple controls, and replayable shooting gameplay.',
-    features: ['Arcade airplane action', 'Fast game sessions', 'Mobile controls', 'APK release available'],
-    changelog: ['Version 1.0.0 APK release', 'Renamed for clearer app catalog SEO'],
+    features: ['Arcade airplane action', 'Fast game sessions', 'Mobile controls', 'Replayable Android action'],
+    changelog: ['Version 1.0.0 release notes', 'Renamed for clearer app catalog SEO'],
     permissions: ['No sensitive permissions expected'],
     privacy: 'The game is presented as a casual Android title and does not require personal information for basic gameplay.',
     screenshots: [assetPath('Images/Air_Shooter.png'), assetPath('Armanix.png')],
     faq: [
       ['Is this the Air Shooter app?', 'Yes, it is listed here as Airplane Shooter Game.'],
-      ['Can I download the APK?', 'Yes, use the APK download button.'],
+      ['Is it made for quick sessions?', 'Yes, it is designed for fast Android arcade play.'],
     ],
   },
   {
@@ -180,19 +180,19 @@ const apps = [
     category: 'Puzzle',
     version: '1.0.0',
     icon: assetPath('Images/puzzle.png'),
-    downloadUrl: 'https://github.com/armanali13000/classic_puzzle/releases/download/v1.0.0/Classic.Puzzle.1.0.0.apk',
     playStoreUrl: '#',
+    websiteUrl: '#',
     shortDescription: 'A classic sliding puzzle game with colorful, focused Android gameplay.',
     fullDescription:
       'Puzzle App is a lightweight Android puzzle experience where players solve image-based sliding puzzles by arranging tiles into the correct order.',
-    features: ['Sliding tile puzzle gameplay', 'Colorful puzzle icon', 'Quick casual sessions', 'Lightweight APK download'],
-    changelog: ['Version 1.0.0 APK release', 'Replaced Gallery App listing with Puzzle App'],
+    features: ['Sliding tile puzzle gameplay', 'Colorful puzzle icon', 'Quick casual sessions', 'Lightweight Android puzzle'],
+    changelog: ['Version 1.0.0 release notes', 'Replaced Gallery App listing with Puzzle App'],
     permissions: ['No sensitive permissions expected'],
     privacy: 'Puzzle gameplay does not require personal information. Optional support messages are sent through Formspree.',
     screenshots: [assetPath('Images/puzzle.png'), assetPath('Images/classic_puzzle.png')],
     faq: [
       ['Is this the puzzle app?', 'Yes, Gallery App has been replaced with Puzzle App in the catalog.'],
-      ['Can I download the APK?', 'Yes, use the Download APK button on this app page.'],
+      ['Is it mobile friendly?', 'Yes, it is built for quick touch-based puzzle sessions.'],
     ],
   },
 ];
@@ -207,7 +207,7 @@ const navItems = [
 
 const categories = ['All', ...Array.from(new Set(apps.map((app) => app.category)))];
 const formEndpoint = 'https://formspree.io/f/meogwndz';
-const supportEmail = 'support@armanixapps.com';
+const supportEmail = 'darkdevil7325@gmail.com';
 
 function routeFromHash() {
   return window.location.hash.replace(/^#\/?/, '') || '';
@@ -276,14 +276,24 @@ function Header({ route, theme, toggleTheme }) {
 function Footer() {
   return (
     <footer className="premium-footer">
-      <div>
+      <div className="footer-main">
         <a className="brand footer-brand" href="#/">
           <img src={assetPath('Armanix.png')} alt="" />
           <span>Armanix Apps</span>
         </a>
-        <p>Premium Android apps, games, utilities, productivity tools, and smart mobile experiences.</p>
+        <p>Premium Android apps, games, utilities, productivity tools, and smart mobile experiences built with a support-first mindset.</p>
+        <a className="footer-email" href={`mailto:${supportEmail}`}>
+          {supportEmail}
+        </a>
       </div>
       <div className="footer-links">
+        <strong>Company</strong>
+        <a href="#/apps">Apps</a>
+        <a href="#/about">About</a>
+        <a href="#/contact">Contact</a>
+      </div>
+      <div className="footer-links">
+        <strong>Support</strong>
         <a href="#/privacy">Privacy Policy</a>
         <a href="#/terms">Terms & Conditions</a>
         <a href="#/support">Support</a>
@@ -313,7 +323,7 @@ function AppsPage({ showToast }) {
   }, [query, category]);
 
   useEffect(() => {
-    setSeo('Android Apps', 'Browse every Android app by Armanix Apps with APK downloads, details, features, and support.');
+    setSeo('Android Apps', 'Browse every Android app by Armanix Apps with Play Store links, official websites, details, features, and support.');
   }, []);
 
   return (
@@ -321,7 +331,7 @@ function AppsPage({ showToast }) {
       <section className="section page-hero">
         <p className="eyebrow">Complete catalog</p>
         <h1>Android apps built for utility, games, business, and daily life.</h1>
-        <p>Search, filter, open details, download APK builds, or check Play Store availability for every Armanix Apps release.</p>
+        <p>Search, filter, open details, visit official websites, or check Play Store availability for every Armanix Apps release.</p>
       </section>
       <section className="section">
         <div className="filter-bar glass-panel">
@@ -349,7 +359,7 @@ function AppDetailsPage({ appId, showToast }) {
   const app = apps.find((item) => item.id === appId);
 
   useEffect(() => {
-    if (app) setSeo(app.name, `${app.name} by Armanix Apps: features, screenshots, changelog, permissions, privacy info, FAQ, and downloads.`);
+    if (app) setSeo(app.name, `${app.name} by Armanix Apps: features, screenshots, changelog, permissions, privacy info, FAQ, Play Store, and official website links.`);
   }, [app]);
 
   if (!app) return <NotFoundPage />;
@@ -366,8 +376,35 @@ function AppDetailsPage({ appId, showToast }) {
             <span>{app.category}</span>
           </div>
           <div className="button-row">
-            <a className="primary-btn" href={app.downloadUrl} target="_blank" rel="noopener noreferrer" onClick={() => showToast('Opening APK download')}>
-              Download APK
+            <a
+              className="primary-btn"
+              href={app.playStoreUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(event) => {
+                if (app.playStoreUrl === '#') {
+                  event.preventDefault();
+                  showToast('Play Store link coming soon');
+                  return;
+                }
+                showToast(`Opening ${app.name} on Play Store`);
+              }}
+            >
+              Play Store
+            </a>
+            <a
+              className="secondary-btn"
+              href={app.websiteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(event) => {
+                if (app.websiteUrl === '#') {
+                  event.preventDefault();
+                  showToast('Website link coming soon');
+                }
+              }}
+            >
+              Website
             </a>
             <a className="secondary-btn" href="#/support">
               Support
@@ -483,15 +520,15 @@ function SupportPage({ showToast }) {
     <PageShell>
       <section className="section page-hero">
         <p className="eyebrow">Support center</p>
-        <h1>Help for downloads, installs, updates, bugs, and app issues.</h1>
-        <p>Choose an app, describe the issue, and send a support request through the secure Formspree form.</p>
+        <h1>Help for installs, updates, bugs, feedback, and app issues.</h1>
+        <p>Choose an app, describe the issue, and send a support request through the secure Formspree form or email support directly.</p>
       </section>
       <section className="section support-grid">
         <div>
           <FaqList
             items={[
-              ['How do I install an APK?', 'Download the APK, allow installs from trusted sources if Android asks, then open the package.'],
-              ['How do updates work?', 'Check the app page for version details and install the latest APK when available.'],
+              ['How do I install an app?', 'Use the available Play Store or official website link on each app page.'],
+              ['How do updates work?', 'Check the app page for version details and use the latest Play Store release when available.'],
               ['How do I report a bug?', 'Use the bug report form and include the app name, issue category, device, and Android version.'],
               ['Can I ask about privacy?', 'Yes. Use the support form or read each app detail page for app-specific privacy notes.'],
             ]}
@@ -613,7 +650,7 @@ function TermsPage() {
       intro="These terms apply to the Armanix Apps website and Android apps."
       sections={[
         ['Use of Apps', 'Use Armanix Apps responsibly and only where permitted by local law and Android platform rules.'],
-        ['Downloads', 'APK downloads are provided for user convenience. You are responsible for installing apps on compatible and trusted devices.'],
+        ['App Access', 'Use the official Play Store and website links provided for each app. You are responsible for installing apps on compatible and trusted devices.'],
         ['No Warranty', 'Apps are provided as available. Armanix Apps works to improve quality but cannot guarantee uninterrupted or error-free operation.'],
         ['User Responsibilities', 'Do not misuse apps, attempt to reverse engineer protected code, distribute modified copies without permission, or submit harmful content through forms.'],
         ['Third-Party Services', 'Some features may depend on services such as weather providers, Formspree, analytics, crash reporting, ads, GitHub, or app marketplaces.'],

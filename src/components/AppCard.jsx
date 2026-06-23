@@ -1,13 +1,20 @@
 import React from 'react';
 
 export default function AppCard({ app, showToast }) {
-  const handleDownload = () => {
-    if (app.downloadUrl === '#') showToast?.('Download link coming soon');
-    else showToast?.(`Opening ${app.name} APK`);
+  const handleStore = (event) => {
+    if (app.playStoreUrl === '#') {
+      event.preventDefault();
+      showToast?.('Play Store link coming soon');
+      return;
+    }
+    showToast?.(`Opening ${app.name} on Play Store`);
   };
 
-  const handleStore = () => {
-    if (app.playStoreUrl === '#') showToast?.('Play Store link coming soon');
+  const handleWebsite = (event) => {
+    if (app.websiteUrl === '#') {
+      event.preventDefault();
+      showToast?.('Website link coming soon');
+    }
   };
 
   return (
@@ -27,11 +34,11 @@ export default function AppCard({ app, showToast }) {
         <span>Version {app.version}</span>
       </div>
       <div className="card-actions">
-        <a className="primary-btn small" href={app.downloadUrl} target="_blank" rel="noopener noreferrer" onClick={handleDownload}>
-          Download APK
-        </a>
         <a className="secondary-btn small" href={app.playStoreUrl} target="_blank" rel="noopener noreferrer" onClick={handleStore}>
           Play Store
+        </a>
+        <a className="secondary-btn small" href={app.websiteUrl} target="_blank" rel="noopener noreferrer" onClick={handleWebsite}>
+          Website
         </a>
         <a className="ghost-link" href={`#/apps/${app.id}`}>
           Details

@@ -21,7 +21,7 @@ export default function Home({ apps, categories, showToast }) {
           <p className="eyebrow">Android app studio</p>
           <h1>Premium Android Apps by Armanix Apps</h1>
           <p className="hero-subtitle">
-            Discover useful apps, games, productivity tools, business solutions, and smart Android experiences.
+            Discover refined Android apps, games, productivity tools, business solutions, and smart mobile experiences from one focused studio.
           </p>
           <div className="button-row">
             <a className="primary-btn" href="#/apps">
@@ -52,12 +52,12 @@ export default function Home({ apps, categories, showToast }) {
           <span>Categories</span>
         </div>
         <div>
-          <strong>APK</strong>
-          <span>Download ready</span>
+          <strong>Store</strong>
+          <span>Play links</span>
         </div>
         <div>
-          <strong>24/7</strong>
-          <span>Support forms</span>
+          <strong>Email</strong>
+          <span>Direct support</span>
         </div>
       </section>
 
@@ -97,7 +97,7 @@ export default function Home({ apps, categories, showToast }) {
           <h2>Premium presentation with practical mobile utility.</h2>
           <p>
             Every app page is built around clear details: what the app does, what permissions it uses, what changed, how to
-            get help, and how to download the APK.
+            get help, and where to find the official app links.
           </p>
         </div>
         <div className="value-grid">
