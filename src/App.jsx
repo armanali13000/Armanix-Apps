@@ -656,6 +656,8 @@ function ChessPrivacyPage() {
     <PolicyPage
       title="2D Chess Privacy Policy"
       intro="This Privacy Policy explains how 2D Chess handles information when you use the app."
+      icon={assetPath('Images/2D_Chess.png')}
+      iconAlt="2D Chess logo"
       sections={[
         ['Data Collection', '2D Chess is designed as a simple chess game and does not require personal information for basic gameplay.'],
         ['Permissions', '2D Chess is listed with no sensitive permissions expected. If permissions are requested by a future version, they should be used only for app functionality.'],
@@ -688,10 +690,11 @@ function TermsPage() {
   );
 }
 
-function PolicyPage({ title, intro, sections }) {
+function PolicyPage({ title, intro, sections, icon, iconAlt }) {
   return (
     <PageShell>
       <section className="section page-hero policy-hero">
+        {icon && <img className="policy-logo" src={icon} alt={iconAlt || ''} />}
         <p className="eyebrow">Legal</p>
         <h1>{title}</h1>
         <p>{intro}</p>

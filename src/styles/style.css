@@ -705,6 +705,16 @@ img {
   font-size: clamp(2.4rem, 6vw, 5rem);
 }
 
+.policy-logo {
+  width: clamp(82px, 12vw, 132px);
+  height: clamp(82px, 12vw, 132px);
+  margin-bottom: 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  object-fit: cover;
+  box-shadow: var(--ring);
+}
+
 .filter-bar {
   display: grid;
   gap: 16px;
