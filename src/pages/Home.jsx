@@ -19,6 +19,7 @@ export default function Home({ apps, categories, showToast }) {
       <section className="hero-section">
         <div className="hero-content">
           <p className="eyebrow">Android app studio</p>
+          <p className="hero-brand-title">Armanix Apps</p>
           <h1>Premium Android Apps by Armanix Apps</h1>
           <p className="hero-subtitle">
             Discover refined Android apps, games, productivity tools, business solutions, and smart mobile experiences from one focused studio.
@@ -61,6 +62,19 @@ export default function Home({ apps, categories, showToast }) {
         </div>
       </section>
 
+      <section className="section download-section">
+        <div className="section-heading">
+          <p className="eyebrow">Download apps</p>
+          <h2>Get apps from the available store and website links.</h2>
+          <a href="#/apps">Open full catalog</a>
+        </div>
+        <div className="app-grid compact-grid">
+          {apps.slice(0, 4).map((app) => (
+            <AppCard key={app.id} app={app} showToast={showToast} />
+          ))}
+        </div>
+      </section>
+
       <section className="section">
         <div className="section-heading">
           <p className="eyebrow">Featured apps</p>
@@ -69,6 +83,19 @@ export default function Home({ apps, categories, showToast }) {
         </div>
         <div className="app-grid">
           {featuredApps.map((app) => (
+            <AppCard key={app.id} app={app} showToast={showToast} />
+          ))}
+        </div>
+      </section>
+
+      <section className="section projects-section">
+        <div className="section-heading">
+          <p className="eyebrow">All apps and projects</p>
+          <h2>Browse the complete Armanix Apps collection.</h2>
+          <a href="#/apps">Search and filter apps</a>
+        </div>
+        <div className="app-grid compact-grid">
+          {apps.map((app) => (
             <AppCard key={app.id} app={app} showToast={showToast} />
           ))}
         </div>

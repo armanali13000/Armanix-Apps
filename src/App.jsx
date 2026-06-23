@@ -357,6 +357,11 @@ function AppsPage({ showToast }) {
 function AppDetailsPage({ appId, showToast }) {
   const [modalImage, setModalImage] = useState(null);
   const app = apps.find((item) => item.id === appId);
+  const hasPlayStore = app?.playStoreUrl && app.playStoreUrl !== '#';
+  const hasApk = app?.downloadUrl && app.downloadUrl !== '#';
+  const hasWebsite = app?.websiteUrl && app.websiteUrl !== '#';
+  const downloadTarget = hasPlayStore ? app.playStoreUrl : hasApk ? app.downloadUrl : hasWebsite ? app.websiteUrl : '#';
+  const downloadLabel = hasPlayStore ? 'Download on Play Store' : hasApk ? 'Download APK' : hasWebsite ? 'Open Website' : 'Coming Soon';
 
   useEffect(() => {
     if (app) setSeo(app.name, `${app.name} by Armanix Apps: features, screenshots, changelog, permissions, privacy info, FAQ, Play Store, and official website links.`);
@@ -377,35 +382,33 @@ function AppDetailsPage({ appId, showToast }) {
           </div>
           <div className="button-row">
             <a
-              className="primary-btn"
-              href={app.playStoreUrl}
+              className={`primary-btn ${downloadTarget === '#' ? 'disabled' : ''}`}
+              href={downloadTarget}
               target="_blank"
               rel="noopener noreferrer"
+              aria-disabled={downloadTarget === '#'}
               onClick={(event) => {
-                if (app.playStoreUrl === '#') {
+                if (downloadTarget === '#') {
                   event.preventDefault();
-                  showToast('Play Store link coming soon');
+                  showToast(`${app.name} coming soon`);
                   return;
                 }
-                showToast(`Opening ${app.name} on Play Store`);
+                showToast(`Opening ${app.name}`);
               }}
             >
-              Play Store
+              {downloadLabel}
             </a>
-            <a
-              className="secondary-btn"
-              href={app.websiteUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(event) => {
-                if (app.websiteUrl === '#') {
-                  event.preventDefault();
-                  showToast('Website link coming soon');
-                }
-              }}
-            >
-              Website
-            </a>
+            {hasWebsite && downloadTarget !== app.websiteUrl && (
+              <a
+                className="secondary-btn"
+                href={app.websiteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => showToast(`Opening ${app.name} website`)}
+              >
+                Website
+              </a>
+            )}
             <a className="secondary-btn" href="#/support">
               Support
             </a>

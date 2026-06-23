@@ -1,6 +1,22 @@
 import React from 'react';
 
 export default function AppCard({ app, showToast }) {
+  const hasPlayStore = app.playStoreUrl && app.playStoreUrl !== '#';
+  const hasApk = app.downloadUrl && app.downloadUrl !== '#';
+  const hasWebsite = app.websiteUrl && app.websiteUrl !== '#';
+  const downloadTarget = hasPlayStore ? app.playStoreUrl : hasApk ? app.downloadUrl : hasWebsite ? app.websiteUrl : '#';
+  const downloadLabel = hasPlayStore ? 'Download on Play Store' : hasApk ? 'Download APK' : hasWebsite ? 'Open Website' : 'Coming Soon';
+
+  const handleDownload = (event) => {
+    if (downloadTarget === '#') {
+      event.preventDefault();
+      showToast?.(`${app.name} coming soon`);
+      return;
+    }
+
+    showToast?.(`Opening ${app.name}`);
+  };
+
   const handleStore = (event) => {
     if (app.playStoreUrl === '#') {
       event.preventDefault();
@@ -34,12 +50,26 @@ export default function AppCard({ app, showToast }) {
         <span>Version {app.version}</span>
       </div>
       <div className="card-actions">
-        <a className="secondary-btn small" href={app.playStoreUrl} target="_blank" rel="noopener noreferrer" onClick={handleStore}>
-          Play Store
+        <a
+          className={`primary-btn small ${downloadTarget === '#' ? 'disabled' : ''}`}
+          href={downloadTarget}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-disabled={downloadTarget === '#'}
+          onClick={handleDownload}
+        >
+          {downloadLabel}
         </a>
-        <a className="secondary-btn small" href={app.websiteUrl} target="_blank" rel="noopener noreferrer" onClick={handleWebsite}>
-          Website
-        </a>
+        {hasPlayStore && downloadTarget !== app.playStoreUrl && (
+          <a className="secondary-btn small" href={app.playStoreUrl} target="_blank" rel="noopener noreferrer" onClick={handleStore}>
+            Play Store
+          </a>
+        )}
+        {hasWebsite && downloadTarget !== app.websiteUrl && (
+          <a className="secondary-btn small" href={app.websiteUrl} target="_blank" rel="noopener noreferrer" onClick={handleWebsite}>
+            Website
+          </a>
+        )}
         <a className="ghost-link" href={`#/apps/${app.id}`}>
           Details
         </a>
