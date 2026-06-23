@@ -73,7 +73,7 @@ const apps = [
     id: 'stockpro-erp',
     name: 'StockPro ERP',
     category: 'Business',
-    version: '1.0.0',
+    version: '1.2.4',
     icon: assetPath('Images/stockpro-erp.png'),
     playStoreUrl: 'https://play.google.com/store/apps/details?id=com.stockproerp.inventory',
     websiteUrl: 'https://stockproerp.vercel.app/',
@@ -81,7 +81,7 @@ const apps = [
     fullDescription:
       'StockPro ERP is presented as a professional Android business solution for inventory thinking, business organization, and operational clarity.',
     features: ['Inventory workflow focus', 'Business dashboard concept', 'Productivity-first design', 'Professional Android UI'],
-    changelog: ['Play Store listing added', 'Official website link added', 'Business app details refreshed'],
+    changelog: ['Latest version 1.2.4', 'Play Store listing added', 'Official website link added', 'Business app details refreshed'],
     permissions: ['Storage for exported records when enabled', 'Internet for connected business features when enabled'],
     privacy: 'Business data should be handled carefully inside the app. Contact forms on this website are optional.',
     screenshots: [assetPath('Images/stockpro-erp.png'), assetPath('Armanix.png')],
